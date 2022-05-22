@@ -10,4 +10,7 @@
 
   body {
       background-color: var(--offWhite);
+      background-image: url("assets/bliss\ login\ bg.png");
+      background-repeat: repeat;
+      background-size: 60%;
   }
