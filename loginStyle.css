@@ -5,6 +5,7 @@
     --sageGreen: #ccefa6;
     --bluishGreen: #347571;
     --greyishGreen: #a6cbb9;
+    --bluishGreenLight: #5ad1a6;
     --green: #61c57f;
 }
 
@@ -118,10 +119,21 @@ button {
     transform: scale(1);
 }
 
-#chk:checked~.signup label {
+:checked~.signup label {
     transform: scale(.6);
 }
 
 .aks {
     padding-left: 50%;
+}
+
+.illustration {
+    width: 85%;
+    height: 55%;
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
