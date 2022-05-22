@@ -4,9 +4,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bliss</title>
+    <link rel="icon" type="image/x-icon" href="/assets/short logo.svg" sizes="64x64">
     <link rel="stylesheet" href="loginStyle.css">
 </head>
 <body>
-    
+    <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="signup">
+                <form action="" method="post">
+                    <label>Sign up</label>
+                    <input type="text" name="Name" id="username" placeholder="User Name" required="">
+                    <input type="email" name="Email" id="email" placeholder="Email" required="">
+                    <input type="text" name="Phonenumber" id="phonenumber" placeholder="Phone Number" required="">
+                    <input type="password" name="Password" id="password" placeholder="Password" required="">
+                    <input type="text" name="Gender" id="Gender" placeholder="Gender" required="">
+                    <input type="text" name="Age" id="Age" placeholder="Age" required="">
+                    <button type="submit"> Sign up </button>
+                </form>
+                <pre style="align-items: center; color: #F6F6F6;">
+            </pre>
+            </div>
+
+            <div class="login">
+
+                <form action="" method="post">
+                    <label for="chk">Login</label>
+                    <input type="email" name="Email" placeholder="Email" required="">
+                    <input type="password" name="Password" placeholder="Password" required="">
+                    <button>Login</button>
+                </form>
+            </div>
+        </div>
 </body>
 </html>

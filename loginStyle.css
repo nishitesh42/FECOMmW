@@ -3,14 +3,125 @@
     --white: #ffffff;
     --offWhite: #eef8e9;
     --sageGreen: #ccefa6;
-    --blueishGreen: #347571;
+    --bluishGreen: #347571;
     --greyishGreen: #a6cbb9;
     --green: #61c57f;
-  }
+}
 
-  body {
-      background-color: var(--offWhite);
-      background-image: url("assets/bliss\ login\ bg.png");
-      background-repeat: repeat;
-      background-size: 60%;
-  }
+body {
+    background-color: var(--offWhite);
+    background-image: url("assets/bliss\ login\ bg.png");
+    background-repeat: repeat;
+    background-size: 60%;
+}
+
+/*Login*/
+.main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+    background: var(--bluishGreen);
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px var(--bluishGreen);
+}
+
+#chk {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: var(--white);
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input {
+    width: 60%;
+    height: 31px;
+    background: var(--offWhite);
+    color: var(--bluishGreen);
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login input {
+    background: var(--offWhite);
+    color: var(--bluishGreen);
+}
+
+button {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: var(--white);
+    background: var(--green);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.signup button:hover {
+    background: var(--greyishGreen);
+}
+
+.login button:hover {
+    background: var(--bluishGreen);
+}
+
+.login {
+    height: 600px;
+    background: var(--greyishGreen);
+    border-radius: 60% / 10%;
+    transform: translateY(-100px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: var(--bluishGreen);
+    transform: scale(.6);
+}
+
+#chk:checked~.login {
+    transform: translateY(-566px);
+}
+
+#chk:checked~.login label {
+    transform: scale(1);
+}
+
+#chk:checked~.signup label {
+    transform: scale(.6);
+}
+
+.aks {
+    padding-left: 50%;
+}
