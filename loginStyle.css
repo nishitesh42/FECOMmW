@@ -1,0 +1,13 @@
+/*Brand Colour Palette*/
+:root {
+    --white: #ffffff;
+    --offWhite: #eef8e9;
+    --sageGreen: #ccefa6;
+    --blueishGreen: #347571;
+    --greyishGreen: #a6cbb9;
+    --green: #61c57f;
+  }
+
+  body {
+      background-color: var(--offWhite);
+  }
