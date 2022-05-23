@@ -56,7 +56,6 @@ label {
     display: flex;
     margin: 20px;
     font-weight: bold;
-    cursor: pointer;
     transition: .5s ease-in-out;
 }
 
