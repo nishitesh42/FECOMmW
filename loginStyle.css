@@ -78,6 +78,10 @@ input {
     color: var(--bluishGreen);
 }
 
+.login label {
+    cursor: pointer;
+}
+
 button {
     width: 60%;
     height: 40px;
