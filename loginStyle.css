@@ -37,6 +37,7 @@ body {
 }
 
 .signup {
+    top: 15%;
     position: relative;
     width: 100%;
     height: 100%;
@@ -60,7 +61,7 @@ input {
     color: var(--bluishGreen);
     justify-content: center;
     display: flex;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
     border: none;
     outline: none;
@@ -112,7 +113,7 @@ button {
 }
 
 #chk:checked~.login {
-    transform: translateY(-566px);
+    transform: translateY(-500px);
 }
 
 #chk:checked~.login label {
@@ -128,12 +129,12 @@ button {
 }
 
 .illustration {
-    width: 85%;
-    height: 55%;
+    width: 80%;
+    height: 50%;
     margin: 0;
     position: absolute;
-    top: 58%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    z-index: -1;
 }
