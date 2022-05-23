@@ -9,6 +9,12 @@
     --green: #61c57f;
 }
 
+/*Brand Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body {
     background-color: var(--offWhite);
     background-image: url("assets/bliss\ login\ bg.png");
