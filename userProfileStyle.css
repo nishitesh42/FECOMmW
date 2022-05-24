@@ -1,4 +1,4 @@
-/*Brand Colour Palette*/
+/*--Brand Colour Palette*/
 :root {
     --white: #ffffff;
     --offWhite: #eef8e9;
@@ -9,10 +9,13 @@
     --green: #61c57f;
 }
 
-/*Brand Font*/
+/*--Brand Font*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -20,6 +23,199 @@ body {
     background-color: var(--offWhite);
 }
 
+/*----------------navbar-----------------------------*/
+nav {
+    display: flex;
+    width: 100%;
+    background: var(--sageGreen);
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+nav .icon {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--white);
+    cursor: pointer;
+}
+
+nav ol {
+    display: flex;
+    List-style: none;
+    margin: auto 0;
+}
+
+nav ol li {
+    margin: 0 10px;
+}
+
+nav ol li a {
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    Letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+nav ol li:hover a {
+    background: var(--white);
+    color: var(--bluishGreenLight);
+
+}
+
+nav .search_box {
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    Line-height: 35px;
+}
+
+nav .search_box input {
+    border: none;
+    outline: none;
+    background: var(--white);
+    height: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    color: var(--bluishGreenLight);
+    width: 350px;
+}
+
+nav .search_box span {
+    color: var(--bluishGreenLight);
+    font-size: 20px;
+    background: var(--white);
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav .search_box span:hover {
+    color: var(--white);
+}
+
+nav .search_box span::after {
+    height: 100%;
+    width: 0%;
+    color: var(--white);
+    background: var(--bluishGreenLight);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+nav .search_box span:hover::after {
+    width: 100%;
+}
+
+nav .bar {
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+nav .bar span {
+    position: absolute;
+    color: var(--white);
+    font-size: 35px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: none;
+}
+
+@media screen and (max-width:1012px) {
+    nav {
+        display: block;
+        padding: 0;
+    }
+
+    nav .icon {
+        display: inline-block;
+        padding: 15px 30px;
+    }
+
+    nav .search_box {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav .search_box input {
+        width: 90%;
+    }
+
+    nav ol {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    nav ol li {
+        text-align: center;
+        transition: 0.3s 0.1s all;
+        opacity: 0;
+    }
+
+    nav ol li:nth-child(1) {
+        transform: translateX(-150px);
+    }
+
+    nav ol li:nth-child(2) {
+        transform: translateX(-200px);
+    }
+
+    nav ol li:nth-child(3) {
+        transform: translateX(-250px);
+    }
+
+    nav .bar {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+
+    nav .bar #times {
+        display: none;
+    }
+
+    #check:checked~nav .bar #times {
+        display: block;
+    }
+
+    #check:checked~nav .bar #bars {
+        display: none;
+    }
+
+    #check:checked~nav ol {
+        visibility: visible;
+        height: 100px;
+    }
+
+    #check:checked~nav ol li:nth-child(1),
+    #check:checked~nav ol li:nth-child(2),
+    #check:checked~nav ol li:nth-child(3) {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+/*---------------profile---------------------------*/
 .profileContainer {
     background-color: var(--sageGreen);
     margin: 1.5rem;
@@ -30,25 +226,28 @@ body {
 
 .displayInfo {
     padding: 1.5rem;
-    width: 100%;
+    width: auto;
+    background-color: var(--sageGreen);
 }
 
-.displayInfo h1{
+.displayInfo h1 {
     color: var(--bluishGreen);
+    margin-bottom: 1rem;
 }
 
 label {
     color: var(--bluishGreen);
+    font-size: medium;
     transition: .5s ease-in-out;
-    margin-bottom: 5px;
 }
 
 input {
     height: 10px;
     background: var(--offWhite);
+    font-size: medium;
     color: var(--bluishGreen);
-    margin-bottom: 10px;
-    padding: 10px;
+    margin: 0.5rem 0 1rem 0;
+    padding: 1rem 0.5rem 1rem 0.5rem;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -58,7 +257,7 @@ button {
     height: 40px;
     color: var(--white);
     background: var(--green);
-    font-size: 1em;
+    font-size: medium;
     padding: 0 10px 0 10px;
     font-weight: bold;
     outline: none;

@@ -8,10 +8,36 @@
     <title>Bliss</title>
     <link rel="icon" type="image/x-icon" href="/assets/short logo.svg" sizes="64x64">
     <link rel="stylesheet" href="userProfileStyle.css">
+    <script src="https://kit.fontawesome.com/9fa7d37f64.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="profileContainer">
+    <!--------------------navbar------------------------------------------>
+    <input type="checkbox" id="check">
+
+    <nav>
+    
+        <div class="icon"> <img src="../../assets/logo.svg" alt="" width="50" height="44"  ></div>
+        
+        <div class="search_box" >
+          <input type="search" placeholder="Search...">
+          <span class="fa fa-search"></span>
+        </div>
+          
+        <ol>
+          <li><a href="#"><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-heart fa-xl"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping fa-xl "></i></a></li>
+        </ol>
+    
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      
+      </nav>
+    <!--------------------profile------------------------------------------>
+    <div class="profileContainer">
         <div class="displayInfo">
             <h1 style="float: left; width: 100%;">Anya's Profile</h1>
             <form class="profile" >
@@ -28,5 +54,6 @@
                 <button type="submit"> Delete Account </button>
               </form> 
         </div>
-    </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
