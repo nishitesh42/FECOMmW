@@ -128,7 +128,7 @@ nav .bar span {
     font-size: 35px;
 }
 
-.search_box input[type="checkbox"] {
+input[type="checkbox"] {
     -webkit-appearance: none;
     display: none;
 }
