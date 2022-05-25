@@ -41,7 +41,6 @@ nav ol li a{
 }
 
 nav ol li:hover a{ 
-    background: #fff; 
     color: #5AD1A6;
 
 }
@@ -179,4 +178,39 @@ input[type="checkbox"]{
 
     }
     
+}
+
+.foot{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #CCEFA6;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer .container .sec{
+    margin-right: 30px;
+}
+
+footer .container .sec.aboutus{
+    width: 40%;
 }
