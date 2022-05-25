@@ -1,3 +1,6 @@
+/*--Brand Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /*--Brand Colour Palette*/
 :root {
     --white: #ffffff;
@@ -8,9 +11,6 @@
     --bluishGreenLight: #5ad1a6;
     --green: #61c57f;
 }
-
-/*--Brand Font*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -128,7 +128,7 @@ nav .bar span {
     font-size: 35px;
 }
 
-input[type="checkbox"] {
+.search_box input[type="checkbox"] {
     -webkit-appearance: none;
     display: none;
 }
@@ -241,7 +241,7 @@ label {
     transition: .5s ease-in-out;
 }
 
-input {
+.profile input {
     height: 10px;
     background: var(--offWhite);
     font-size: medium;
@@ -253,7 +253,7 @@ input {
     border-radius: 5px;
 }
 
-button {
+.profile button {
     height: 40px;
     color: var(--white);
     background: var(--green);
