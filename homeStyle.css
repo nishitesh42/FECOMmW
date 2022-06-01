@@ -125,6 +125,7 @@ input[type="checkbox"] {
     display: flex;
     position: fixed;
     bottom: 0;
+    justify-content: flex-start;
 }
 
 .footer .col-1 p {
@@ -132,6 +133,7 @@ input[type="checkbox"] {
     justify-content: center;
     width: 300px;
     padding-bottom: 10px;
+    justify-content: start;
 }
 
 .logoImg2 {
@@ -140,10 +142,12 @@ input[type="checkbox"] {
 
 .footer .col-2 {
     text-align: center;
+    justify-content: start;
 }
 
 .footer .col-3 {
     text-align: left;
+    justify-content: start;
 }
 
 .col-2 {
@@ -172,6 +176,13 @@ input[type="checkbox"] {
 .footer .col-2 a:hover {
     color: #fff;
     background-color: #5AD1A6;
+}
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    background-color: #CCEFA6;
+    color: #347571;
 }
 
 @media screen and (max-width:1012px) {
