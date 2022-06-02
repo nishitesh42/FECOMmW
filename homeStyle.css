@@ -120,9 +120,12 @@ input[type="checkbox"] {
     display: none;
 }
 
+.page-content {
+    min-height: calc(100vh - 70px);
+}
+
 .footer {
-    position: fixed;
-    bottom: 0;
+    height: max-content;
     width: 100%;
     padding: 40px 12%;
     background: #CCEFA6;
