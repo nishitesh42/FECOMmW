@@ -53,7 +53,6 @@ nav .search_box {
     margin: auto 0;
     height: 35px;
     Line-height: 35px;
-    border-radius: 25px;
 }
 
 nav .search_box input {
@@ -65,6 +64,8 @@ nav .search_box input {
     font-size: 15px;
     color: #5AD1A6;
     width: 350px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 nav .search_box span {
@@ -76,6 +77,8 @@ nav .search_box span {
     position: relative;
     cursor: pointer;
     z-index: 1;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 nav .search_box span:hover {
@@ -84,7 +87,7 @@ nav .search_box span:hover {
 
 nav .search_box span::after {
     height: 100%;
-    width: 0%;
+    width: 0;
     color: #fff;
     background: #5AD1A6;
     content: "";
@@ -93,6 +96,8 @@ nav .search_box span::after {
     right: 0;
     z-index: -1;
     transition: 0.4s;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 nav .search_box span:hover::after {
@@ -130,7 +135,7 @@ input[type="checkbox"] {
 .footer .col-1 p {
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 350px;
     padding-bottom: 10px;
 }
 
