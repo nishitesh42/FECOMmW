@@ -1,3 +1,10 @@
+/*Brand Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 .fluid {
     width: 100%;
     height: max-content;
@@ -15,8 +22,63 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+    height: fit-content;
 }
 
-.col-wrapper {
-    width: 100%;
+form {
+    margin-top: 20px;
+}
+label {
+    color: #347571;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button {
+    color: white;
+    background-color: #347571;
+    width: 200px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    width: auto;
+    color: #347571;
+    background-color: #eef8e9;
+    border-radius: 5px;
+    border: none;
+    width: 350px;
+    height: 2.5em;
+}
+
+tr {
+    height: 5em;
+}
+
+td {
+    width: 50vw;
+}
+
+.row input, textarea {
+    width: 350px;
+    border: none;
+    background-color:#eef8e9 ;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 1em;
+}
+
+input {
+    height: 2.5em;
+}
+
+.uploadImg {
+    padding: 5px;
+    color: #347571;
 }
