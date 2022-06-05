@@ -1,0 +1,22 @@
+.fluid {
+    width: 100%;
+    height: max-content;
+    background-color: #ccefa6;
+    float: left;
+    padding: 20px;
+}
+
+.fluid h1 {
+    font-weight: 600 !important;
+    color: #347571;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.col-wrapper {
+    width: 100%;
+}
