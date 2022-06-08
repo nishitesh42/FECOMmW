@@ -193,18 +193,16 @@ input[type="checkbox"] {
     align-items: center;
 }
 
-.banner {
-    margin: 100px;
+.banners {
+    margin: 20px;
     background-color: #F3F3F3;
 }
-  
+   
 
 #slider {
     overflow: hidden;
     margin: auto;
-    width: 95%;
-    max-width: 1920px;
-    max-height: 1920px;
+    width: 100%;
 }
 #slider div {
     position: relative;
@@ -217,6 +215,7 @@ input[type="checkbox"] {
 #slider div img {
     width: 20%;
     float: left;
+    height: calc(100vh - 235px);
 }
   @keyframes slider {
     0% {
