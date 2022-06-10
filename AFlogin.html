@@ -24,7 +24,7 @@
 
   <!-- NAVBAR ------------------------------------------------------------------------------------------------->
   <nav>
-    <div class="icon"><a href="home.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
+    <div class="icon"><a href=""><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
 
     <div class="search_box">
       <input type="search" placeholder="Search...">
@@ -32,12 +32,14 @@
     </div>
 
     <ol>
-      <li class="dropdown">
-        <a href="#"><i class="fa-solid fa-circle-user fa-xl"></i></a>
-        <div class="dropdown-content">
-          <a href=""><i class="fa-solid fa-arrow-right-to-bracket" style="color: #5AD1A6; padding-right: 1em;" ></i>Profile</a>
-          <a href=""><i class="fa-solid fa-user" style="color: #5AD1A6; padding-right: 1em;" ></i>Logout</a>
-        <div>
+      <li>
+        <div class="dropdown">
+          <a href=""><i class="fa-solid fa-circle-user fa-xl"></i></a>
+          <div class="dropdown-content">
+            <a href="userProfile.html"><i class="fa-solid fa-user" style="color: #5AD1A6; padding-right: 1em;"></i>Profile</a>
+            <a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #5AD1A6; padding-right: 1em;" ></i>Logout</a>
+          </div>
+        </div>
       </li>
       <li><div class="tooltip"><a href="#"><i class="fa-solid fa-heart fa-xl"></i></a><span class="tooltiptext">Wishlist</span></li>
       <li><div class="tooltip"><a href="#"><i class="fa-solid fa-cart-shopping fa-xl "></i></a><span class="tooltiptext">Cart</span></div></li>
@@ -138,6 +140,7 @@
     </div>
   </footer>
 
+  <!-- SCROLL TO TOP ---------------------------------------------------------------------------------------------->
   <div>
     <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa-solid fa-circle-arrow-up"></i> </button>
   </div>

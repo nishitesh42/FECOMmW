@@ -1,0 +1,41 @@
+.loginContainer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginContainer h3 {
+    color: #347571;
+}
+
+.loginContainer button {
+    padding: 10px;
+    width: 100px;
+    background-color: white;
+    border: 1px solid #347571;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #347571;
+    font-size: large;
+    
+}
+
+.loginContainer button:hover {
+    background-color: #a6cbb9;
+    color: white;
+
+}
+
+.loginContainer a {
+    text-decoration: none;
+}
+
+.loginContainer img {
+    width: 200px;
+    height: 200px;
+}

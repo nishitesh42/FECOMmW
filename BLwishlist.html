@@ -2,28 +2,30 @@
 <html>
 
 <head>
-  <title>Bliss</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title> Bliss </title>
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="../../assets/logo.svg">
+  <link rel="icon" type="image/x-icon" href="../assets/logo.svg">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS Files -->
-  <link rel="stylesheet" href="userProfileStyle.css">
   <link rel="stylesheet" href="homeStyle.css">
+  <link rel="stylesheet" href="BLwish_cart.css">
 
   <!-- Icon CDN Link -->
   <script src="https://kit.fontawesome.com/9fa7d37f64.js" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+
 </head>
 
 <body>
-
   <input type="checkbox" id="check">
 
   <!-- NAVBAR ------------------------------------------------------------------------------------------------->
   <nav>
-    <div class="icon"><a href="AFlogin.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
+    <div class="icon"><a href="home.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
 
     <div class="search_box">
       <input type="search" placeholder="Search...">
@@ -33,15 +35,14 @@
     <ol>
       <li>
         <div class="dropdown">
-          <a href="AFlogin.html"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+          <a href="home.html"><i class="fa-solid fa-circle-user fa-xl"></i></a>
           <div class="dropdown-content">
-            <a href="userProfile.html">Profile</a>
-            <a href="login.html"><i class="fa-solid fa-user" style="color: #5AD1A6; padding-right: 1em;"></i>Logout</a>
+            <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket" style="color: #5AD1A6; padding-right: 1em;" ></i>Login</a>
           </div>
         </div>
       </li>
-      <li><a href="#"><i class="fa-solid fa-heart fa-xl"></i></a></li>
-      <li><a href="#"><i class="fa-solid fa-cart-shopping fa-xl "></i></a></li>
+      <li><a href="BLwishlist.html"><i class="fa-solid fa-heart fa-xl"></i></a></li>
+      <li><a href="BLcart.html"><i class="fa-solid fa-cart-shopping fa-xl "></i></a></li>
     </ol>
 
     <label for="check" class="bar">
@@ -51,24 +52,15 @@
 
   </nav>
 
-  <!-- PROFILE ---------------------------------------------------------------------------------------------->
-  <div class="profileContainer">
-    <div class="displayInfo">
-      <h1 style="float: left; width: 100%;">Anya's Profile</h1>
-      <form class="profile">
-        <label for="name">Name</label><br>
-        <input type="text" placeholder="Anya" size="50" disabled><br>
-        <label for="email">Email</label><br>
-        <input type="email" placeholder="anya@gmail.com" size="50" disabled><br>
-        <label for="phone">Phone Number</label><br>
-        <input type="text" placeholder="8345672341" size="50" disabled><br>
-        <label for="gender">Gender</label><br>
-        <input type="text" placeholder="Female" size="50" disabled><br>
-        <label for="age">Age</label><br>
-        <input type="text" placeholder="16" size="50" disabled><br>
-        <button type="submit"> Delete Account </button>
-      </form>
-    </div>
+  <!-- PAGE BODY ---------------------------------------------------------------------------------------------->
+  <div class="page-content">
+      <div class="loginContainer">
+        <h3>Login to view items in your wishlist.</h3>
+        <div>
+            <img src="../assets/BLwish_cart/BLwish.png" alt="">
+        </div>
+        <a href="login.html"><button>Login</button></a>
+      </div>
   </div>
 
   <!-- FOOTER ---------------------------------------------------------------------------------------------->
@@ -100,3 +92,5 @@
 
   <script src="ScrollToTop.js"></script>
 </body>
+
+</html>

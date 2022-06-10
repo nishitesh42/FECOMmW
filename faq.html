@@ -3,11 +3,17 @@
 
 <head>
     <title> Bliss </title>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/logo.svg">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="homeStyle.css">
     <link rel="stylesheet" href="faq.css">
+
+    <!-- Icon CDN Link -->
     <script src="https://kit.fontawesome.com/9fa7d37f64.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,7 +22,7 @@
 
   <!-- NAVBAR ------------------------------------------------------------------------------------------------->
   <nav>
-    <div class="icon"><a href="home.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
+    <div class="icon"><a href="AFlogin.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
 
     <div class="search_box">
       <input type="search" placeholder="Search...">
@@ -24,7 +30,15 @@
     </div>
 
     <ol>
-      <li><a href="#"><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+      <li>
+        <div class="dropdown">
+          <a href="AFlogin.html"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+          <div class="dropdown-content">
+            <a href="userProfile.html">Profile</a>
+            <a href="login.html"><i class="fa-solid fa-user" style="color: #5AD1A6; padding-right: 1em;"></i>Logout</a>
+          </div>
+        </div>
+      </li>
       <li><a href="#"><i class="fa-solid fa-heart fa-xl"></i></a></li>
       <li><a href="#"><i class="fa-solid fa-cart-shopping fa-xl "></i></a></li>
     </ol>
@@ -85,17 +99,17 @@
   <!-- FOOTER ---------------------------------------------------------------------------------------------->
   <footer class="footer">
     <div class="col-1 logoImg">
-      <p><img class="logoImg2" src="../assets/Footer/100natural.svg" alt="" width="50"
-          height="44">100% NATURAL guarantee for all products at Company.com</p>
-      <p><img class="logoImg2" src="../assets/Footer/100handMade.svg" alt="" width="50"
-          height="44">100% NATURAL guarantee for all products at Company.com</p>
+      <p><img class="logoImg2" src="../assets/Footer/100natural.svg" alt="" width="50" height="44">100% NATURAL
+        guarantee for all products at Company.com</p>
+      <p><img class="logoImg2" src="../assets/Footer/100handMade.svg" alt="" width="50" height="44">100% NATURAL
+        guarantee for all products at Company.com</p>
     </div>
     <div class="col-2">
       <div class="logom"><img src="../assets/logo.svg" alt="" width="50" height="44"></div>
       <h3 style="align-items: center;"> FECOmmw </h3><br>
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/prags_bathlicious/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
     </div>
     <div class="col-3">
@@ -103,8 +117,14 @@
       <p><a href="faq.html" style="text-decoration: none; color: #347571;">FAQs</a> <br>Call Us <br>0674-2720262</p>
     </div>
   </footer>
-    
-    <script src="faq.js"></script>
+
+  <!-- SCROLL TO TOP ---------------------------------------------------------------------------------------------->
+  <div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa-solid fa-circle-arrow-up"></i> </button>
+  </div>
+
+  <script src="ScrollToTop.js"></script>
+  <script src="faq.js"></script>
 </body>
 
 </html>
