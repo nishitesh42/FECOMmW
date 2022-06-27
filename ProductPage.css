@@ -457,7 +457,19 @@ input[type="checkbox"] {
     font-family: arial;
     border: solid #CCEFA6;
   }
-  
+
+.imh {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+
+.imh :hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.599);
+}
+
 .parent {
     border: 1px solid black;
     margin: 1rem;

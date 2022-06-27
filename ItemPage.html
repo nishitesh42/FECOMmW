@@ -2,110 +2,140 @@
 <html>
 
 <head>
-  <title> Bliss </title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="../assets/logo.svg">
+	<title> Bliss </title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../assets/logo.svg">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="Itempage.css">
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="Itempage.css">
+	<meta name="robots" content="noindex,follow" />
 
-  <!-- Icon CDN Link -->
-  <script src="https://kit.fontawesome.com/9fa7d37f64.js" crossorigin="anonymous"></script>
+	<!-- Icon CDN Link -->
+	<script src="https://kit.fontawesome.com/9fa7d37f64.js" crossorigin="anonymous"></script>
 
-  <!-- Scripts -->
+	<!-- Scripts -->
 
 </head>
 
 <body>
-  <input type="checkbox" id="check">
+	<input type="checkbox" id="check">
 
-  <!-- NAVBAR ------------------------------------------------------------------------------------------------->
-  <nav>
-    <div class="icon"><a href="home.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
+	<!-- NAVBAR ------------------------------------------------------------------------------------------------->
+	<nav>
+		<div class="icon"><a href="home.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
 
-    <div class="search_box">
-      <input type="search" placeholder="Search...">
-      <span class="fa fa-search"></span>
-    </div>
+		<div class="search_box">
+			<input type="search" placeholder="Search...">
+			<span class="fa fa-search"></span>
+		</div>
 
-    <ol>
-      <li>
-        <div class="dropdown">
-          <a href="home.html"><i class="fa-solid fa-circle-user fa-xl"></i></a>
-          <div class="dropdown-content">
-            <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket" style="color: #5AD1A6; padding-right: 1em;" ></i>Login</a>
-          </div>
-        </div>
-      </li>
-      <li><a href="BLwishlist.html"><i class="fa-solid fa-heart fa-xl"></i></a></li>
-      <li><a href="BLcart.html"><i class="fa-solid fa-cart-shopping fa-xl "></i></a></li>
-    </ol>
-
-    <label for="check" class="bar">
-      <span class="fa fa-bars" id="bars"></span>
-      <span class="fa fa-times" id="times"></span>
-    </label>
-
-  </nav>
-  <!-- SCROLL TO TOP ---------------------------------------------------------------------------------------------->
-  <div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa-solid fa-circle-arrow-up"></i> </button>
-  </div>
-
- <!-- Iteam Page ---------------------------------------------------------------------------------------------->
- <section class="product">
-	<div class="product__photo">
-		<div class="photo-container">
-			<div class="photo-main">
-				<div class="controls">
-					<i class="material-icons">share</i>
-					<i class="material-icons">favorite_border</i>
+		<ol>
+			<li>
+				<div class="dropdown">
+					<a href="home.html"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+					<div class="dropdown-content">
+						<a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"
+								style="color: #5AD1A6; padding-right: 1em;"></i>Login</a>
+					</div>
 				</div>
-				<img src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png" alt="green apple slice">
+			</li>
+			<li>
+				<div class="tooltip"><a href="BLwishlist.html"><i class="fa-solid fa-heart fa-xl"></i></a><span
+						class="tooltiptext">Wishlist</span>
+			</li>
+			<li>
+				<div class="tooltip"><a href="BLcart.html"><i class="fa-solid fa-cart-shopping fa-xl "></i></a><span
+						class="tooltiptext">Cart</span></div>
+			</li>
+		</ol>
+
+		<label for="check" class="bar">
+			<span class="fa fa-bars" id="bars"></span>
+			<span class="fa fa-times" id="times"></span>
+		</label>
+
+	</nav>
+
+	<!-- SCROLL TO TOP ---------------------------------------------------------------------------------------------->
+	<div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa-solid fa-circle-arrow-up"></i>
+		</button>
+	</div>
+
+	<!-- Product Details ---------------------------------------------------------------------------------------------->
+	<main class="container">
+
+		<!-- Left Column -->
+		<img id=featured src="E:\XCSE\Project\FECOMmW\assets\Product Detail\1.png">
+
+		<div id="slide-wrapper" >
+			<img id="slideLeft" class="arrow" src="images/arrow-left.png">
+
+			<div id="slider">
+				<img class="thumbnail active" src="E:\XCSE\Project\FECOMmW\assets\Product Detail\1.png">
+				<img class="thumbnail" src="E:\XCSE\Project\FECOMmW\assets\Product Detail\3.png">
+				<img class="thumbnail" src="E:\XCSE\Project\FECOMmW\assets\Product Detail\2.png">
+
 			</div>
-			<div class="photo-album">
-				<ul>
-					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"></li>
-					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303532/codepen/delicious-apples/half-apple.png" alt="half apple"></li>
-					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303160/codepen/delicious-apples/green-apple-flipped.png" alt="green apple"></li>
-					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303708/codepen/delicious-apples/apple-top.png" alt="apple top"></li>
-				</ul>
-			</div>
+
+			<img id="slideRight" class="arrow" src="images/arrow-right.png">
 		</div>
 	</div>
-	<div class="product__info">
-		<div class="title">
-			<h1>Delicious Apples</h1>
-			<span>COD: 45999</span>
+
+
+		<!-- Right Column -->
+		<div class="right-column">
+
+			<!-- Product Description -->
+			<div class="product-description">
+				<span>BodyScrub</span>
+				<h1>Rose Scrub</h1>
+				<p>Exfoliating Sugar Scrub Bars with Essential Oils for Smoothening Skin Care</p>
+			</div>
+
+			<!-- Product Pricing -->
+			<div class="product-price">
+				<span>Total Amount </span>
+				<span>₹550 </span>
+				<div class="dropup">
+					<button class="dropbtn">Quantity<i class="fa-solid fa-caret-up" style="padding: 5px;"></i></button>
+					<div class="dropup-content">
+					  <a href="#"> 1</a>
+					  <a href="#"> 2</a>
+					  <a href="#"> 3</a>
+					</div>
+				  </div>
+			</div>
+			<div>
+				<a href="#" class="cart-btn" >Add to cart <i class="fa-solid fa-heart fa-xl"></i></a>
+				<a href="#" class="cart-btn">Wishlist <i class="fa-solid fa-cart-shopping fa-xl "></i></a>
+			</div>
+
+			<!-- Product Configuration -->
+			<div>
+				<p class="Material">Material & Care:</p>
+				<ol class="rem">
+					<li>Coffee</li>
+					<li>Salt</li>
+					<li>Base</li>
+					<li>Essential Oils</li>
+				</ol>
+				<p class="Material">Material & Care:</p>
+				<ol class="rem">
+					<li>Smoothening</li>
+					<li>Remove Excess Oils</li>
+					<li>Gentel on Skin</li>
+				</ol>
+			</div>
 		</div>
-		<div class="price">
-			R$ <span>7.93</span>
-		</div>
-		<div class="variant">
-			<h3>SELECT A COLOR</h3>
-			<ul>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"></li>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="yellow apple"></li>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange apple"></li>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="red apple"></li>
-			</ul>
-		</div>
-		<div class="description">
-			<h3>BENEFITS</h3>
-			<ul>
-				<li>Apples are nutricious</li>
-				<li>Apples may be good for weight loss</li>
-				<li>Apples may be good for bone health</li>
-				<li>They're linked to a lowest risk of diabetes</li>
-			</ul>
-		</div>
-		<button class="buy--btn">ADD TO CART</button>
-	</div>
-</section>
-  <script src="ScrollToTop.js"></script>
+	</main>
+
+	<script src="ScrollToTop.js"></script>
+	<script src="Itempage.css"></script>
+
 </body>
 
 </html>
