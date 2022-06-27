@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Bliss </title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/logo.svg">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="Itempage.css">
+
+  <!-- Icon CDN Link -->
+  <script src="https://kit.fontawesome.com/9fa7d37f64.js" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+
+</head>
+
+<body>
+  <input type="checkbox" id="check">
+
+  <!-- NAVBAR ------------------------------------------------------------------------------------------------->
+  <nav>
+    <div class="icon"><a href="home.html"><img src="../assets/logo.svg" alt="" width="50" height="44"></a></div>
+
+    <div class="search_box">
+      <input type="search" placeholder="Search...">
+      <span class="fa fa-search"></span>
+    </div>
+
+    <ol>
+      <li>
+        <div class="dropdown">
+          <a href="home.html"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+          <div class="dropdown-content">
+            <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket" style="color: #5AD1A6; padding-right: 1em;" ></i>Login</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="BLwishlist.html"><i class="fa-solid fa-heart fa-xl"></i></a></li>
+      <li><a href="BLcart.html"><i class="fa-solid fa-cart-shopping fa-xl "></i></a></li>
+    </ol>
+
+    <label for="check" class="bar">
+      <span class="fa fa-bars" id="bars"></span>
+      <span class="fa fa-times" id="times"></span>
+    </label>
+
+  </nav>
+  <!-- SCROLL TO TOP ---------------------------------------------------------------------------------------------->
+  <div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa-solid fa-circle-arrow-up"></i> </button>
+  </div>
+
+ <!-- Iteam Page ---------------------------------------------------------------------------------------------->
+ <section class="product">
+	<div class="product__photo">
+		<div class="photo-container">
+			<div class="photo-main">
+				<div class="controls">
+					<i class="material-icons">share</i>
+					<i class="material-icons">favorite_border</i>
+				</div>
+				<img src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png" alt="green apple slice">
+			</div>
+			<div class="photo-album">
+				<ul>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303532/codepen/delicious-apples/half-apple.png" alt="half apple"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303160/codepen/delicious-apples/green-apple-flipped.png" alt="green apple"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303708/codepen/delicious-apples/apple-top.png" alt="apple top"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="product__info">
+		<div class="title">
+			<h1>Delicious Apples</h1>
+			<span>COD: 45999</span>
+		</div>
+		<div class="price">
+			R$ <span>7.93</span>
+		</div>
+		<div class="variant">
+			<h3>SELECT A COLOR</h3>
+			<ul>
+				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"></li>
+				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="yellow apple"></li>
+				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange apple"></li>
+				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="red apple"></li>
+			</ul>
+		</div>
+		<div class="description">
+			<h3>BENEFITS</h3>
+			<ul>
+				<li>Apples are nutricious</li>
+				<li>Apples may be good for weight loss</li>
+				<li>Apples may be good for bone health</li>
+				<li>They're linked to a lowest risk of diabetes</li>
+			</ul>
+		</div>
+		<button class="buy--btn">ADD TO CART</button>
+	</div>
+</section>
+  <script src="ScrollToTop.js"></script>
+</body>
+
+</html>

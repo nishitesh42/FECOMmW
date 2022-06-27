@@ -343,7 +343,7 @@ input[type="checkbox"] {
 
 /*--------- FOOTER ---------------------*/
 .footer {
-    height: max-content;
+    height: 200px;
     width: 100%;
     padding: 40px 12%;
     background: #CCEFA6;
@@ -351,6 +351,8 @@ input[type="checkbox"] {
     display: flex;
     position: absolute;
     bottom: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .footer .col-1 p {
@@ -435,3 +437,65 @@ input[type="checkbox"] {
     background-color: transparent;
     color: #5AD1A6;
 }
+
+
+/*--------- Product Page ---------------------*/
+
+.products {
+    padding-top: 20px;
+    display: flex;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    max-height: 380px;
+    color: #347571;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border: solid #CCEFA6;
+  }
+  
+.parent {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.price {
+    color: #347571;
+    font-size: 22px;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    padding-bottom: 20px;
+  }
+
+.a{
+    font-size: 12px;
+    color: #347571;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #fff;
+    background-color: #5AD1A6;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .card button:hover {
+    color: #347571;
+    background-color: #fff;
+  }
