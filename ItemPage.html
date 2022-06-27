@@ -67,25 +67,18 @@
 
 	<!-- Product Details ---------------------------------------------------------------------------------------------->
 	<main class="container">
-
 		<!-- Left Column -->
-		<img id=featured src="E:\XCSE\Project\FECOMmW\assets\Product Detail\1.png">
-
-		<div id="slide-wrapper" >
-			<img id="slideLeft" class="arrow" src="images/arrow-left.png">
-
-			<div id="slider">
-				<img class="thumbnail active" src="E:\XCSE\Project\FECOMmW\assets\Product Detail\1.png">
-				<img class="thumbnail" src="E:\XCSE\Project\FECOMmW\assets\Product Detail\3.png">
-				<img class="thumbnail" src="E:\XCSE\Project\FECOMmW\assets\Product Detail\2.png">
-
-			</div>
-
-			<img id="slideRight" class="arrow" src="images/arrow-right.png">
-		</div>
-	</div>
-
-
+		<Div class="con">
+			<ul class="thumb">
+				<li><a href="../assets/Product Detail/1.png" target="imgBox>"><img
+							src="../assets/Product Detail/1.png"></a></li>
+				<li><a href="../assets/Product Detail/2.png" target="imgBox>"><img
+							src="../assets/Product Detail/2.png"></a></li>
+				<li><a href="../assets/Product Detail/3.png" target="imgBox>"><img
+							src="../assets/Product Detail/3.png"></a></li>
+			</ul>
+			<div class="imgBox"><img src="../assets/Product Detail/1.png"></div>
+		</Div>
 		<!-- Right Column -->
 		<div class="right-column">
 
@@ -103,14 +96,14 @@
 				<div class="dropup">
 					<button class="dropbtn">Quantity<i class="fa-solid fa-caret-up" style="padding: 5px;"></i></button>
 					<div class="dropup-content">
-					  <a href="#"> 1</a>
-					  <a href="#"> 2</a>
-					  <a href="#"> 3</a>
+						<a href="#"> 1</a>
+						<a href="#"> 2</a>
+						<a href="#"> 3</a>
 					</div>
-				  </div>
+				</div>
 			</div>
 			<div>
-				<a href="#" class="cart-btn" >Add to cart <i class="fa-solid fa-heart fa-xl"></i></a>
+				<a href="#" class="cart-btn">Add to cart <i class="fa-solid fa-heart fa-xl"></i></a>
 				<a href="#" class="cart-btn">Wishlist <i class="fa-solid fa-cart-shopping fa-xl "></i></a>
 			</div>
 
@@ -134,8 +127,16 @@
 	</main>
 
 	<script src="ScrollToTop.js"></script>
-	<script src="Itempage.css"></script>
-
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="text/javascript"></script>
+	<script>
+		$(document).ready(function (e) {
+			$('.thumb a).moseover(fuction(){
+				e.preventDefault();
+			$('.imgBox img').attr("src", $(this).attr("href"));
+		})
+		})
+	</script>
 </body>
 
 </html>
